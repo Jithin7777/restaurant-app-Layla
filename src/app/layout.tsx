@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Italiana, Oswald } from "next/font/google";
+import { Geist, Geist_Mono, Inter, Italiana, Oswald } from "next/font/google";
 import "./globals.css";
-
 
 const italiana = Italiana({
   weight: "400",
@@ -13,6 +12,12 @@ const oswald = Oswald({
   weight: "400",
   subsets: ["latin"],
   variable: "--font-oswald",
+});
+
+const inter = Inter({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-inter",
 });
 
 
@@ -40,7 +45,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${italiana.variable} ${oswald.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${italiana.variable} ${oswald.variable} ${inter.variable} antialiased`}
       >
         {children}
       </body>

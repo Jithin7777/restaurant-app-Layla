@@ -7,3 +7,9 @@
 .font-oswald {
   font-family: var(--font-oswald); /* Fix: lowercase "o" to match font config */
 }
+
+.font-inter {
+  font-family: 'Inter', sans-serif;
+}
+
+
