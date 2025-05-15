@@ -3,3 +3,7 @@
 .font-italiana {
   font-family: var(--font-italiana);
 }
+
+.font-oswald {
+  font-family: var(--font-oswald); /* Fix: lowercase "o" to match font config */
+}
