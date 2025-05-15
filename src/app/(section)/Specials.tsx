@@ -5,6 +5,7 @@ const Specials = () => {
     <div>Specials
 
         <h1>fdkgjedgjjop</h1>
+        <h2>dsfsdfs</h2>
     </div>
   )
 }
