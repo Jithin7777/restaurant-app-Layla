@@ -9,6 +9,7 @@ import TableReservation from './(section)/TableReservation'
 import Reviews from './(section)/Reviews'
 import Gallery from './(section)/Gallery'
 import ScrollUs from './(section)/ScrollUs'
+import Footer from './components/Footer'
 
 const page = () => (
   <main>
@@ -23,6 +24,7 @@ const page = () => (
       <Reviews/>
       <Gallery/>
       <ScrollUs/>
+      <Footer/>
     </div>
   </main>
 )
