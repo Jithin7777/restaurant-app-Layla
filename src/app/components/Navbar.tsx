@@ -1,25 +1,22 @@
 "use client";
 import Link from "next/link";
-import Image from "next/image";
 import React, { useState } from "react";
 
 const Navbar = () => {
-  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false); 
 
   const handleSidebarToggle = () => {
     setIsSidebarOpen(!isSidebarOpen);
   };
 
   return (
-    <nav className="w-full px-5 flex justify-between items-center bg-transparent fixed -top-10 left-0 z-50">
+    <nav className="w-full  px-5   flex justify-between items-center bg-transparent fixed  -top-10 left-0 z-50">
       {/* Left Side - Logo or Brand Name */}
-      <div className="md:ml-20 relative w-40 h-40 md:w-60 md:h-60">
-        <Image
+      <div className="md:ml-20  ">
+        <img
           src="/images/nav/logo.png"
           alt="Logo"
-          fill
-          className="object-contain"
-          priority
+          className="md:h-60 md:w-60 h-40 w-40 object-contain fill-[#D5A859]  "
         />
       </div>
 
@@ -47,8 +44,6 @@ const Navbar = () => {
         <button
           onClick={handleSidebarToggle}
           className="text-white p-2 focus:outline-none"
-          aria-label="Toggle menu"
-          aria-expanded={isSidebarOpen}
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -76,11 +71,7 @@ const Navbar = () => {
         }`}
       >
         <div className="flex justify-end p-4">
-          <button
-            onClick={handleSidebarToggle}
-            className="text-white p-2"
-            aria-label="Close menu"
-          >
+          <button onClick={handleSidebarToggle} className="text-white p-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -99,18 +90,36 @@ const Navbar = () => {
           </button>
         </div>
         <div className="flex flex-col items-center py-3">
-          {["/", "/menu", "/about", "/contact"].map((path, idx) => (
-            <Link
-              key={idx}
-              href={path}
-              className="text-white py-2"
-              onClick={handleSidebarToggle}
-            >
-              {path === "/" ? "Home" : path.replace("/", "").charAt(0).toUpperCase() + path.slice(2)}
-            </Link>
-          ))}
+          <Link
+            href="/"
+            className="text-white py-2"
+            onClick={handleSidebarToggle}
+          >
+            Home
+          </Link>
+          <Link
+            href="/menu"
+            className="text-white py-2"
+            onClick={handleSidebarToggle}
+          >
+            Menu
+          </Link>
+          <Link
+            href="/about"
+            className="text-white py-2"
+            onClick={handleSidebarToggle}
+          >
+            About
+          </Link>
+          <Link
+            href="/contact"
+            className="text-white py-2"
+            onClick={handleSidebarToggle}
+          >
+            Contact
+          </Link>
           <button
-            className="bg-[#CDAE64] text-black rounded-none px-4 py-2 hover:opacity-90 mt-4"
+            className="bg-[#CDAE64] text-black rounded-none px-4 py-2 hover:opacity-90 mt-4 "
             onClick={handleSidebarToggle}
           >
             ORDER NOW

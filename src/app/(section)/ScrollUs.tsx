@@ -30,7 +30,7 @@ const ScrollUs = () => {
         <img
           src="/images/scroll-us/img4.png"
           alt="Image 4"
-          className="w-full h-68 object-cover rotate-10 "
+          className="w-full h-68 object-cover md:rotate-10 rotate-5 "
         />
       </div>
 
