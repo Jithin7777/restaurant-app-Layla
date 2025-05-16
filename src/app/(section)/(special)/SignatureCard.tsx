@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 interface SignatureCardProps {
@@ -13,8 +14,10 @@ const SignatureCard: React.FC<SignatureCardProps> = ({
 }) => {
   return (
     <div className="flex flex-col items-center text-center text-white">
-      <div className="relative w-full h-[180px] md:h-[200px]   overflow-hidden">
-        <img
+      <div className="relative w-full h-[160px] md:h-[200px]   overflow-hidden">
+        <Image
+        width={200}
+        height={200}
           src={image}
           alt={title}
           className="w-[320px] h-full object-cover object-center"
