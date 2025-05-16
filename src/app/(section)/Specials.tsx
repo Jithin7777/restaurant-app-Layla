@@ -63,12 +63,12 @@ const Specials = () => {
           </div>
 
           {/* Special 4 */}
-          <div className="overflow-hidden rounded-lg shadow-md relative h-[300px] sm:h-[500px] border-[1px] border-[#F29A21] rounded-t-full sm:mt-10 md:mt-36">
+          <div className="overflow-hidden shadow-md relative h-[300px] sm:h-[500px] border-[1px] border-[#F29A21] sm:mt-10 md:mt-36 rounded-t-none rounded-b-none">
             <Image
               src="/images/specials/img4.png"
-              alt="Special 4"
+              alt="Special 2"
               fill
-              style={{ objectFit: "cover", borderTopLeftRadius: "9999px", borderTopRightRadius: "9999px" }}
+              style={{ objectFit: "cover" }}
               priority
             />
           </div>
