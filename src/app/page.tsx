@@ -8,6 +8,7 @@ import SignatureSpecial from './(section)/(special)/SignatureSpecial'
 import TableReservation from './(section)/TableReservation'
 import Reviews from './(section)/Reviews'
 import Gallery from './(section)/Gallery'
+import ScrollUs from './(section)/ScrollUs'
 
 const page = () => (
   <main>
@@ -21,6 +22,7 @@ const page = () => (
       <TableReservation/>
       <Reviews/>
       <Gallery/>
+      <ScrollUs/>
     </div>
   </main>
 )
