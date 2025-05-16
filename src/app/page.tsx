@@ -6,6 +6,8 @@ import AboutUs from './(section)/AboutUs'
 import Specials from './(section)/Specials'
 import SignatureSpecial from './(section)/(special)/SignatureSpecial'
 import TableReservation from './(section)/TableReservation'
+import Reviews from './(section)/Reviews'
+import Gallery from './(section)/Gallery'
 
 const page = () => (
   <main>
@@ -17,6 +19,8 @@ const page = () => (
       <Specials />
       <SignatureSpecial/>
       <TableReservation/>
+      <Reviews/>
+      <Gallery/>
     </div>
   </main>
 )
