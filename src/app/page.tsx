@@ -5,6 +5,7 @@ import ExploreMenu from './(section)/ExploreMenu'
 import AboutUs from './(section)/AboutUs'
 import Specials from './(section)/Specials'
 import SignatureSpecial from './(section)/(special)/SignatureSpecial'
+import TableReservation from './(section)/TableReservation'
 
 const page = () => (
   <main>
@@ -15,6 +16,7 @@ const page = () => (
       <AboutUs />
       <Specials />
       <SignatureSpecial/>
+      <TableReservation/>
     </div>
   </main>
 )
