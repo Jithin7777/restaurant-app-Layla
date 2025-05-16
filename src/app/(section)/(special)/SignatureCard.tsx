@@ -3,13 +3,13 @@ import React from "react";
 interface SignatureCardProps {
   image: string;
   title: string;
-  price: number;
+  // price: number;
 }
 
 const SignatureCard: React.FC<SignatureCardProps> = ({
   image,
   title,
-  price,
+  // price,
 }) => {
   return (
     <div className="flex flex-col items-center text-center text-white">
